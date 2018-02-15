@@ -9,25 +9,25 @@
         "x12",
         "edi",
         "ansi",
-        "asc"
+        "asc",
+        "node-edi-reader"
     ],
     
-    "homepage": "https://github.com/TrueCommerce/node-x12",
+    "homepage": "https://github.com/Aashish-1008/node-edi-reader",
     
     "bugs": {
-        "url": "https://github.com/TrueCommerce/node-x12/wiki"
+        "url": "https://github.com/Aashish-1008/node-edi-reader/wiki"
     },
     
     "license": "MIT",
     
     "author": {
-        "name": "TrueCommerce PSG Engineering Team",
-        "url": "http://www.truecommerce.com"
+        "name": "TrueCommerce PSG Engineering Team"
     },
     
     "repository": {
         "type": "git",
-        "url": "https://github.com/TrueCommerce/node-x12.git"
+        "url": "https://github.com/Aashish-1008/node-edi-reader.git"
     },
     
     "scripts": {

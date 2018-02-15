@@ -1,6 +1,6 @@
 
-# X12
-A simple ASC X12 parser for NodeJS. Created originally for the [TC Toolbox](https://github.com/TrueCommerce/vscode-tctoolbox) project.
+# node-edi-x12 reader
+A simple ASC X12 parser for NodeJS. 
 
 ## Usage
 ```typescript

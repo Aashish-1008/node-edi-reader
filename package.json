@@ -1,0 +1,47 @@
+{
+    "name": "x12",
+    
+    "version": "1.0.4",
+    
+    "description": "A simple ASC X12 parser for NodeJS.",
+    
+    "keywords": [
+        "x12",
+        "edi",
+        "ansi",
+        "asc"
+    ],
+    
+    "homepage": "https://github.com/TrueCommerce/node-x12",
+    
+    "bugs": {
+        "url": "https://github.com/TrueCommerce/node-x12/wiki"
+    },
+    
+    "license": "MIT",
+    
+    "author": {
+        "name": "TrueCommerce PSG Engineering Team",
+        "url": "http://www.truecommerce.com"
+    },
+    
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TrueCommerce/node-x12.git"
+    },
+    
+    "scripts": {
+    },
+    
+    "dependencies": {
+        
+    },
+    
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-mocha": "^2.2.0",
+        "gulp-shell": "^0.5.2",
+        "mocha": "^2.4.5",
+        "typescript": "^1.8.7"
+    }
+}

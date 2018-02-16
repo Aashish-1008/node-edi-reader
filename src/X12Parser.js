@@ -53,8 +53,8 @@ var X12Parser = (function() {
             this.diagnostics.push(new X12Diagnostic_1.X12Diagnostic(X12Diagnostic_1.X12DiagnosticLevel.Error, errorMessage, new Positioning_1.Range(0, 0, 0, edi.length - 1)));
         }
 
-        if (!transactionTypeId || transactionTypeId != "837P") {
-            var errorMessage = "missing transactionTypeId - 837P";
+        if (!transactionTypeId || transactionTypeId != "005010X222A1") {
+            var errorMessage = "missing transactionTypeId field. Its value can be - 005010X222A1";
             if (this._strict) {
                 throw new Errors_1.ParserError(errorMessage);
             }

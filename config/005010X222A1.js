@@ -14,10 +14,10 @@ module.exports = [{
 	"startPatterns": ["NM1\\*(85)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\*"],
 	"loopId": "2010AA"
 }, {
-	"startPatterns": ["NM1\\*(87)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(87)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2010AB"
 }, {
-	"startPatterns": ["NM1\\*(PTP)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(PTP)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2010AC"
 }, {
 	"startPatterns": ["HL\\*([0-9]{0,})?\\d+\\*([0-9]{1,})\\*22\\*"],
@@ -47,13 +47,13 @@ module.exports = [{
 	"startPatterns": ["NM1\\*(77)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\*"],
 	"loopId": "2310C"
 }, {
-	"startPatterns": ["NM1\\*(DQ)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(DQ)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2310D"
 }, {
-	"startPatterns": ["NM1\\*(PW)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(PW)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2310E"
 }, {
-	"startPatterns": ["NM1\\*(45)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(45)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2310F"
 }, {
 	"startPatterns": ["SBR\\*([A-Za-z0-9_-]{1,})?\\d+\\*([A-Za-z0-9_-]{2,})\\*"],
@@ -77,7 +77,7 @@ module.exports = [{
 	"startPatterns": [],
 	"loopId": "2330F"
 }, {
-	"startPatterns": ["NM1\\*(85)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(85)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2330G"
 }, {
 	"startPatterns": ["LX\\*([0-9]{1,})?\\d+~"],
@@ -86,28 +86,28 @@ module.exports = [{
 	"startPatterns": ["LIN\\*([a-z0-9]{0,})\\*(\\w{2}|\\s{2}|[\\s\\S]{2})\\*"],
 	"loopId": "2410"
 }, {
-	"startPatterns": ["NM1\\*(82)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(82)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2420A"
 }, {
-	"startPatterns": ["NM1\\*(QB)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(QB)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2420B"
 }, {
-	"startPatterns": ["NM1\\*(77)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(77)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2420C"
 }, {
-	"startPatterns": ["NM1\\*(DQ)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(DQ)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2420D"
 }, {
-	"startPatterns": ["NM1\\*(DK)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(DK)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2420E"
 }, {
-	"startPatterns": ["NM1\\*(DN)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\", "NM1\\*(P3)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(DN)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})", "NM1\\*(P3)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2420F"
 }, {
-	"startPatterns": ["NM1\\*(PW)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(PW)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2420G"
 }, {
-	"startPatterns": ["NM1\\*(45)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\"],
+	"startPatterns": ["NM1\\*(45)\\*(\\w{1}|\\s{1}|[\\s\\S]{1})"],
 	"loopId": "2420H"
 }, {
 	"startPatterns": ["SVD\\*(\\w{1}|\\s{1}|[\\s\\S]{1})\\*([A-Za-z0-9_-]{4,})\\*"],

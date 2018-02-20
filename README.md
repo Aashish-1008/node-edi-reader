@@ -12,7 +12,7 @@ var X12QueryEngine = require('X12QueryEngine');
 let parser = new X12Parser(true);
 let interchange = parser.parseX12('...raw X12 data...',transactionTypeId);
 
-transactionTypeId can be 005010X222A1.
+transactionTypeId can be 005010X222A1 ( 837 professional ), 005010X223A2 ( 837 institutional ) .
 
 // OR use the query engine to query a document
 let engine = new X12QueryEngine(parser);

@@ -155,6 +155,7 @@ var X12Parser = (function() {
         currentSegment = new X12Segment_1.X12Segment();
 
         for (var i = 0, l = 0, c = 0; i < edi.length; i++) {
+
             if (!tagged && (edi[i].search(/\s/) == -1) && (edi[i] !== elementDelimiter) && (edi[i] !== segmentTerminator)) {
                 currentSegment.tag += edi[i];
                 if (!currentSegment.range.start) {
@@ -170,40 +171,53 @@ var X12Parser = (function() {
                 currentElement = new X12Element_1.X12Element();
                 currentElement.range.start = new Positioning_1.Position(l, c);
             } else if (edi[i] == segmentTerminator) {
+
                 currentElement.range.end = new Positioning_1.Position(l, (c - 1));
                 currentSegment.elements.push(currentElement);
                 currentSegment.range.end = new Positioning_1.Position(l, c);
 
 
-                // attach loopId to segment
-                // var options = {
-                //     elementDelimiter: elementDelimiter,
-                //     segmentTerminator: segmentTerminator
-                // }
+                //attach loopId to segment
+
+                /*var options = {
+                    elementDelimiter: elementDelimiter,
+                    segmentTerminator: segmentTerminator
+                }*/
+
                 var currentSegmentLine = currentSegment.toString();
+                var isNewMatchFound;
 
                 for (var k = 0; k < loopData.length; k++) {
 
                     for (var p = 0; p < loopData[k].startPatterns.length; p++) {
+
                         if (currentSegmentLine.match(getRegEx(loopData[k].startPatterns[p], 'g')) && !loopData[k].isUsed) {
                             currentLoopId = loopData[k].loopId
-                            console.log('matches', k, currentLoopId);
-                            currentSegment.loopId = currentLoopId
+                            currentSegment.loopId = currentLoopId;
+                            isNewMatchFound = true
+                            //console.log('matches', k, currentLoopId, currentSegmentLine, isNewMatchFound);
                             loopData[k].isUsed = true;
                         }
                     }
+                    if (isNewMatchFound)
+                        break;
 
-                    currentSegment.loopId = currentLoopId
                 }
+
+                isNewMatchFound = false
+
+                currentSegment.loopId = currentLoopId
 
 
                 segments.push(currentSegment);
+                console.log(currentSegmentLine, currentLoopId)
                 currentSegment = new X12Segment_1.X12Segment();
                 tagged = false;
                 if (segmentTerminator === '\n') {
                     l++;
                     c = -1;
                 }
+
             } else if (tagged && (edi[i] == elementDelimiter)) {
                 currentElement.range.end = new Positioning_1.Position(l, (c - 1));
                 currentSegment.elements.push(currentElement);
@@ -214,6 +228,8 @@ var X12Parser = (function() {
             }
             c++;
         }
+
+        console.log('out of main loop....')
         return segments;
     };
 
